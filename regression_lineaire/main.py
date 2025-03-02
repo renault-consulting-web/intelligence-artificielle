@@ -36,6 +36,10 @@ reg.fit(X, y)
 y_pred = reg.predict(X)
 
 # metrics
-print(mean_squared_error(y, y_pred))
+mse = mean_squared_error(y, y_pred)
+print(mse)
 print(mean_absolute_error(y, y_pred))
 print(mean_absolute_percentage_error(y, y_pred))
+
+# Root Mean Squared Error
+print(np.sqrt(mse))
